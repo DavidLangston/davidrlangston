@@ -17,13 +17,10 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './auth/login/login.component';
-import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { AuthInterceptor } from "./auth/auth-interceptor";
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -41,8 +38,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
-    SignupComponent,
     HomeComponent,
     AboutComponent,
     ContactComponent,
@@ -66,7 +61,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+  providers: [ 
   ],
   bootstrap: [AppComponent]
 })
