@@ -1,0 +1,35 @@
+
+<div class="login container">
+<label style="font-size:xx-large;" class="header">Login</label>
+  <form (submit)="onLogin(loginForm)" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email..."
+        required
+        email
+        name="email">        
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password..."
+            required>
+      </div>
+      <small id="" class="form-text text-muted">Don't have an account? <a routerLink="/signup">Sign up</a></small>
+      <button type="submit" class="btn btn-primary pull-right">Submit</button>
+    </form>
+</div>
+
+<!-- <mat-card>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <form (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+      <mat-form-field>
+        <input matInput name="email" ngModel type="email" placeholder="E-Mail" #emailInput="ngModel" required email>
+        <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="password" name="password" ngModel matInput placeholder="Password" #passwordInput="ngModel" required>
+        <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="accent" type="submit">Login</button>
+    </form>
+  </mat-card> -->

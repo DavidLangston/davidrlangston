@@ -1,0 +1,43 @@
+.nav.navbar-nav.navbar-right li a {
+    color: black;
+}
+
+.nav.navbar-nav li a {
+    color: black;
+}
+
+.navbar-header a {
+    color: black;
+}
+
+.glyphicon {
+    font-size: 25px;
+}
+
+.dropdown-toggle:active, .open .dropdown-toggle {
+    background:#FFF !important; 
+    color:#000 !important;
+}
+
+.dropdown-pull-right {
+    float: right !important;
+    right: 0;
+    left: auto;
+  }
+  
+.dropdown-pull-right>.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+@media (max-width: 510px) {
+	.cleardiv	{
+		display:none;
+	}
+}
+@media (max-width: 460px) {
+	.cleardiv	{
+		display:none;
+	}
+}
+

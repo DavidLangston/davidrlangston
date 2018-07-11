@@ -1,0 +1,15 @@
+#resume {
+    text-align: center;
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+.container{
+    display:table;
+    resize:both;
+    overflow: auto;
+}
+
+
+
+

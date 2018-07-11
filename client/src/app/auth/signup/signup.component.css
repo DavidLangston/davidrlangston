@@ -1,0 +1,24 @@
+.signup {
+    width: 80%;
+    height: 50%;
+    background-color: rgb(215, 250, 255);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 10px 18px black;
+    padding-top:20px;
+}
+
+input {
+    background-color: transparent;
+}
+
+label.header {
+    display: block;
+    text-align: center;
+}
+
