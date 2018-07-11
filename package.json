@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/DavidLangston/davidrlangston#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.4",
+    "mongodb": "^3.0.10",
+    "mongoose": "^5.1.5",
+    "typescript": "^2.7.2"
   }
 }
